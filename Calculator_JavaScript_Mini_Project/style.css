@@ -1,0 +1,165 @@
+@font-face {
+    font-family: myFont;
+    src: url(digital.ttf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: rgb(5, 206, 206);
+}
+
+.calculator {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.calc {
+    border: 0.3rem solid;
+    border-radius: 2rem;
+    padding: 3rem;
+    background-color: black;
+}
+
+.display {
+    padding: 2.5rem 2rem;
+    border: 0.2rem solid;
+    border-radius: 1rem;
+    text-align: right;
+    background-color: wheat;
+    font-size: 3rem;
+    font-family: myFont;
+}
+
+sup {
+    font-size: 1.5rem;
+}
+
+.correct {
+    padding: 1rem 5rem;
+    background-color: magenta;
+}
+
+.ac {
+    padding: 1rem 7rem; 
+    background-color: red;
+}
+
+.parenthesis {
+    padding: 1rem 3rem;
+}
+
+.calc-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+input, button {
+    font-size: 2rem;
+    cursor: pointer;
+    margin: 0.5rem 0;
+    padding: 1rem 2.5rem;
+    border-color: black;
+    border-width: 0.3rem;
+    border-radius: 1rem;
+    border-style: double;
+    background-color: lime
+}
+
+.equal-button {
+    margin-top: 1rem;
+    padding: 1rem 20.78rem;
+    background-color: orange;
+}
+
+.display:hover {
+    background-color: wheat;
+}
+
+input:hover, button:hover {
+    background-color: rgb(0, 218, 0);
+}
+
+.ac:hover {
+    background-color: rgb(218, 0, 0);
+}
+
+.correct:hover {
+    background-color: rgb(218, 0, 218);
+}
+
+.equal-button:hover {
+    background-color: rgb(218, 141, 0);
+}
+
+
+@media screen and (max-width: 800px) and (min-width: 531px) {
+    .calc {
+        padding: 1rem;
+    }
+    
+    .equal-button {
+        padding: 1rem 14.4rem;
+    }
+
+    input {
+        padding: 1rem;
+        font-size: 1rem;
+    }
+
+    .correct {
+        padding: 1rem 2rem;
+        background-color: magenta;
+    }
+    
+    .ac {
+        padding: 1rem 3rem; 
+        background-color: red;
+    }
+    
+    .parenthesis {
+        padding: 1rem 1.3rem;
+    }
+
+    .display {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    .calc {
+        padding: 1rem;
+    }
+    
+    .equal-button {
+        padding: 1rem 10.9rem;
+    }
+
+    input {
+        padding: 1rem;
+        font-size: 1rem;
+    }
+
+    .correct {
+        padding: 1rem 2rem;
+        background-color: magenta;
+    }
+    
+    .ac {
+        padding: 1rem 3rem; 
+        background-color: red;
+    }
+    
+    .parenthesis {
+        padding: 1rem 1.3rem;
+    }
+
+    .display {
+        font-size: 1.4rem;
+    }
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="icon.png">   
+        <title>JavaScript Calculator Project</title>
+    </head>
+    <body>
+        <section class="main-container">
+            <div class="calculator">
+                <div class="calc">
+                    <input type="text" class="display" size="27" readonly> <!-- used to display the values  -->
+                    <br>
+                    <br>
+                    <div class="buttons">
+                        
+                        <div class="calc-group"> <!-- made groups for similar buttons -->
+                            <input type="button" class="correct" value="Correct" onclick="correct()">
+                            <input type="button" class="ac" value="AC" onclick="allClear()">
+                        </div>
+                        
+                        <br>
+                        
+                        <div class="calc-group">
+                            <input type="button" value="7" onclick="dis('7')"> <!-- if this button is pressed, then it will call 'dis()' function with a parametric value of 7, same for other buttons -->
+                            <input type="button" value="8" onclick="dis('8')">
+                            <input type="button" value="9" onclick="dis('9')">
+                            <input type="button" value="/" onclick="dis('/')">
+                            <input type="button" class="parenthesis" value="(" onclick="dis('(')">
+                        </div>
+    
+                        <br>
+            
+                        <div class="calc-group">
+                            <input type="button" value="4" onclick="dis('4')">
+                            <input type="button" value="5" onclick="dis('5')">
+                            <input type="button" value="6" onclick="dis('6')">
+                            <input type="button" value="x" onclick="dis('*')">
+                            <input type="button" class="parenthesis" value=")" onclick="dis(')')">
+                        </div>
+                        
+                        <br>
+                        
+                        <div class="calc-group">
+                            <input type="button" value="1" onclick="dis('1')">
+                            <input type="button" value="2" onclick="dis('2')">
+                            <input type="button" value="3" onclick="dis('3')">
+                            <input type="button" value="-" onclick="dis('-')">
+                            <input type="button" value="%" onclick="dis('%')">
+                        </div>
+    
+                        <br>
+                        
+                        <div class="calc-group">
+                            <input type="button" value="0" onclick="dis('0')">
+                            <input type="button" value="00" onclick="dis('00')">
+                            <input type="button" value="." onclick="dis('.')">
+                            <input type="button" value="+" onclick="dis('+')">
+                            <button type="button" onclick="square()">x<sup>2</sup></button>
+                        </div>
+    
+                        <input type="button" class="equal-button" value="=" onclick="solve()"> <!-- if this button is clicked, it calls 'solve()' function from the JavaScript file link to this HTML file -->
+    
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script src="script.js"></script> <!-- a JavaScript file is link with this HTML file -->
+    </body>
+</html>
